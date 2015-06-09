@@ -1,5 +1,5 @@
 {
-  "name": "gulp-template",
+  "name": "summer-hackathon",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "bower": "bower",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Keita Nakanishi <nakanishy@yahoo.com>",
+  "author": "dit <dit.rohm@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.4.1",
