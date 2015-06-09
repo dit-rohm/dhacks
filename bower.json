@@ -1,8 +1,8 @@
 {
-  "name": "gulp_template",
+  "name": "summer-hackathon",
   "version": "0.0.0",
   "authors": [
-    "Keita Nakanishi <nakanishy@yahoo.com>"
+    "dit <dit.rohm@gmail.com>"
   ],
   "license": "MIT",
   "ignore": [
