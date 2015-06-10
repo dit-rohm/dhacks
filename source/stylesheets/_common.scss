@@ -1,0 +1,25 @@
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  height: 100%;
+  min-height: 100%;
+  color: $base-text-color;
+  font-size: 14px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, YuGothic, '游ゴシック', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Meiryo', 'メイリオ', 'MS PGothic', 'MS Pゴシック', sans-serif;
+  line-height: 1.7;
+}
+
+body {
+  min-height: 100%;
+  background: $bg-color;
+}
+
+a {
+  color: $link-color;
+  &:hover, &:visited {
+    color: $link-color;
+    text-decoration: underline;
+  }
+}
