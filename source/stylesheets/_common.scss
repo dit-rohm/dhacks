@@ -23,3 +23,16 @@ a {
     text-decoration: underline;
   }
 }
+
+.main {
+  section {
+    padding: $section-margin 0;
+  }
+  h2 {
+    margin-bottom: 20px;
+    color: $base-text-color;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}
