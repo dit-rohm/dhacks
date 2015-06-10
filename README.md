@@ -1,4 +1,9 @@
-# gulp-template
+# Summer Hackathon
+
+## Requirements
+
+- npm
+- compass
 
 ## Getting Started
 
