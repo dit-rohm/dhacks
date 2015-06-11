@@ -1,4 +1,4 @@
-(function() {
+$(function() {
   // map表示
   var latlng = new google.maps.LatLng(34.802760, 135.771273);
   var options = {
@@ -19,4 +19,4 @@
     title: 'ローム記念館',
     map: map
   });
-})();
+});
