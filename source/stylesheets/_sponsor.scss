@@ -3,5 +3,8 @@
   .container {
     padding: 0 $base-margin;
     max-width: 700px;
+    .col-sm-6 {
+      text-align: center;
+    }
   }
 }
