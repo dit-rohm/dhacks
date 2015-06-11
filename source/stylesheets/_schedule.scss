@@ -3,5 +3,8 @@
   .container {
     padding: 0 30px;
     max-width: 700px;
+    .col-sm-4 {
+      text-align: center;
+    }
   }
 }
