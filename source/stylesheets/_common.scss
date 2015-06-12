@@ -29,7 +29,8 @@ a {
     padding: $section-margin 0;
   }
   h2 {
-    margin-bottom: 20px;
+    margin: 0;
+    margin-bottom: $base-margin * 0.5;
     color: $base-text-color;
     font-size: 1.8rem;
     font-weight: bold;
