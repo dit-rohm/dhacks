@@ -1,0 +1,16 @@
+box: mikoim/docker-frontend:latest
+
+build:
+    steps:
+        - script:
+            name: Install dependencies
+            code: npm install && bower install --config.interactive=false --allow-root
+
+        - script:
+            name: Build
+            code: npm run build
+
+    after-steps:
+        - wantedly/pretty-slack-notify:
+            webhook_url: $SLACK_WEBHOOK_URL
+            channel: $SLACK_CHANNEL

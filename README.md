@@ -1,5 +1,7 @@
 # Summer Hackathon
 
+[![wercker status](https://app.wercker.com/status/470ccf7371082d41dcaafe82b2c3982b/s "wercker status")](https://app.wercker.com/project/bykey/470ccf7371082d41dcaafe82b2c3982b)
+
 ## Requirements
 
 - npm
