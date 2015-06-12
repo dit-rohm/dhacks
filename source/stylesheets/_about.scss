@@ -1,0 +1,11 @@
+@charset 'UTF-8';
+
+#about {
+  .description {
+    width: 60%;
+    margin: auto;
+    line-height: 2;
+    text-align: justify;
+    color: $base-text-color;
+  }
+}
