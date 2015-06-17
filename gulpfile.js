@@ -11,6 +11,7 @@ var concat      = require('gulp-concat');
 var imagemin    = require('gulp-imagemin');
 var webserver   = require('gulp-webserver');
 var runSequence = require('run-sequence');
+var validator   = require('gulp-html');
 
 var paths = {
   source: 'source',
@@ -44,6 +45,7 @@ var server = {
 
 gulp.task('html', function() {
   return gulp.src(path.join(source.html, '**/*.html'))
+    .pipe(validator())
     .pipe(gulp.dest(build.html));
 });
 
