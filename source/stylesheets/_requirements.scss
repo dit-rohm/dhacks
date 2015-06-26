@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+#requirements {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+  table {
+    border-collapse: collapse;
+    th {
+      color: $white-text-color;
+      background: $theme-color;
+      text-align: center;
+      vertical-align: middle;
+      border-color: subtextcolor;
+    }
+    td {
+      padding-left: 20px;
+      color: $base-text-color;
+      vertical-align: middle;
+      border-color: subtextcolor;
+    }
+  }
+}
