@@ -1,17 +1,15 @@
 @charset 'UTF-8';
-
 .jumbotron {
   color: $white-text-color;
   background: $theme-color;
   text-align: center;
-
   .title {
     font-size: 8rem;
   }
-
   .btn-more {
     margin: 50px auto;
     padding: 10px 30px;
+    width: 230px;
     background: $theme-color;
     border-color: $bg-color;
     color: $white-text-color;
@@ -19,11 +17,13 @@
     letter-spacing: 0.2rem;
     @include box-sizing(border-box);
     @include transition-duration(0.3s);
-
     &:hover {
       background: $accent-color;
       border-color: $accent-color;
       color: $white-text-color;
     }
+  }
+  .round {
+    border-radius: 3px;
   }
 }
