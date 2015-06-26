@@ -8,13 +8,14 @@ var compass     = require('gulp-compass');
 var minifyCSS   = require('gulp-minify-css');
 var uglify      = require('gulp-uglify');
 var concat      = require('gulp-concat');
+var ghPages     = require('gulp-gh-pages-cname');
 var imagemin    = require('gulp-imagemin');
 var webserver   = require('gulp-webserver');
 var runSequence = require('run-sequence');
 
 var paths = {
   source: 'source',
-  build:  'build',
+  build:  'dist',
   html:   '',
   css:    'stylesheets',
   js:     'javascripts',
@@ -111,6 +112,11 @@ gulp.task('build', function(callback) {
     ['html', 'compass', 'js', 'bower', 'imagemin'],
     callback
   );
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages({cname:'dhacks.party'}));
 });
 
 gulp.task('start', function(callback) {
