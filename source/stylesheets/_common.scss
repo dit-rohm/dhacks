@@ -4,17 +4,14 @@
 }
 
 html {
-  height: 100%;
-  min-height: 100%;
-  color: $base-text-color;
   font-size: 14px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, YuGothic, '游ゴシック', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Meiryo', 'メイリオ', 'MS PGothic', 'MS Pゴシック', sans-serif;
-  line-height: 1.7;
 }
 
 body {
-  min-height: 100%;
   background: $bg-color;
+  color: $base-text-color;
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Meiryo', 'メイリオ', 'MS PGothic', 'MS Pゴシック', sans-serif;
+  line-height: 1.7;
 }
 
 a {
@@ -28,13 +25,17 @@ a {
 .main {
   section {
     padding: $section-margin 0;
+    .container {
+      padding: 0 $base-margin;
+    }
   }
   h2 {
     margin: 0;
-    margin-bottom: $base-margin * 0.5;
+    margin-bottom: $base-margin * 0.7;
     color: $base-text-color;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: bold;
     text-align: center;
+    word-wrap: break-word;
   }
 }

@@ -1,29 +1,67 @@
 @charset 'UTF-8';
 .jumbotron {
+  margin-bottom: 0;
+  padding: $base-margin * 2.5 $base-margin * 0.5;
   color: $white-text-color;
   background: $theme-color;
   text-align: center;
-  .title {
+  h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+  }
+  h2 {
+    margin-bottom: $base-margin * 0.5;
+    text-transform: uppercase;
+  }
+  h1 {
+    margin-bottom: $base-margin;
     font-size: 8rem;
   }
+  h3 {
+    margin-bottom: $base-margin * 1.8;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+  p {
+    margin: 0;
+  }
   .btn-more {
-    margin: 50px auto;
+    margin: 0 auto;
     padding: 10px 30px;
     width: 230px;
-    background: $theme-color;
-    border-color: $bg-color;
-    color: $white-text-color;
+    background: $accent-color;
+    border-color: $accent-color;
     border-radius: 0;
-    letter-spacing: 0.2rem;
+    color: $white-text-color;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
     @include box-sizing(border-box);
     @include transition-duration(0.3s);
     &:hover {
-      background: $accent-color;
-      border-color: $accent-color;
-      color: $white-text-color;
+      text-decoration: none;
+      opacity: .8;
     }
   }
   .round {
     border-radius: 3px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .jumbotron {
+    h1 {
+      font-size: 5.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .jumbotron {
+    h1 {
+      font-size: 5rem;
+    }
   }
 }

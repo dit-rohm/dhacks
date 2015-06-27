@@ -1,10 +1,12 @@
 @charset "UTF-8";
 #sponsor {
+  padding: 0;
+  padding-bottom: $section-margin * 2;
   .container {
-    padding: 0 $base-margin;
     max-width: 700px;
-    .col-sm-6 {
-      text-align: center;
+    text-align: center;
+    h2 {
+      margin-bottom: $base-margin;
     }
   }
 }
