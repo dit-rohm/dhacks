@@ -1,0 +1,26 @@
+.social-buttons{
+  ul {
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: $base-margin;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    line-height: 33px;
+  }
+
+  &:before {
+    content: " ";
+    display: block;
+  }
+}
+
+.twitter-share-button {
+  width: 90px !important;
+}
+
+.fb_iframe_widget * {
+  vertical-align: top !important;
+}
