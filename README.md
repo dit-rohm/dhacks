@@ -28,3 +28,8 @@ $ npm run start
 $ npm run build
 ```
 
+## Deploy
+
+```
+$ npm run deploy
+```
