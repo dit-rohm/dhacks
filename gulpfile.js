@@ -5,6 +5,7 @@ var path        = require('path');
 var gulp        = require('gulp');
 var plumber     = require('gulp-plumber');
 var compass     = require('gulp-compass');
+var minifyHTML  = require('gulp-minify-html');
 var minifyCSS   = require('gulp-minify-css');
 var uglify      = require('gulp-uglify');
 var concat      = require('gulp-concat');
@@ -57,6 +58,7 @@ gulp.task('html-build', function() {
       anonymizeIp: false,
       linkAttribution: true,
       }))
+    .pipe(minifyHTML())
     .pipe(gulp.dest(build.html));
 });
 
