@@ -58,7 +58,9 @@ gulp.task('html-build', function() {
       anonymizeIp: false,
       linkAttribution: true,
       }))
-    .pipe(minifyHTML())
+    .pipe(minifyHTML({
+      quotes: true
+    }))
     .pipe(gulp.dest(build.html));
 });
 
