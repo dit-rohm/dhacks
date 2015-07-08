@@ -5,9 +5,11 @@ var path        = require('path');
 var gulp        = require('gulp');
 var plumber     = require('gulp-plumber');
 var compass     = require('gulp-compass');
+var minifyHTML  = require('gulp-minify-html');
 var minifyCSS   = require('gulp-minify-css');
 var uglify      = require('gulp-uglify');
 var concat      = require('gulp-concat');
+var ga          = require('gulp-ga');
 var ghPages     = require('gulp-gh-pages-cname');
 var imagemin    = require('gulp-imagemin');
 var webserver   = require('gulp-webserver');
@@ -45,6 +47,18 @@ var server = {
 
 gulp.task('html', function() {
   return gulp.src(path.join(source.html, '**/*.html'))
+    .pipe(gulp.dest(build.html));
+});
+
+gulp.task('html-build', function() {
+  return gulp.src(path.join(source.html, '**/*.html'))
+    .pipe(ga({
+      url: 'dhacks.party',
+      uid: 'UA-61361620-2',
+      anonymizeIp: false,
+      linkAttribution: true,
+      }))
+    .pipe(minifyHTML())
     .pipe(gulp.dest(build.html));
 });
 
@@ -109,7 +123,7 @@ gulp.task('watch', function() {
 gulp.task('build', function(callback) {
   runSequence(
     'clean',
-    ['html', 'compass', 'js', 'bower', 'imagemin'],
+    ['html-build', 'compass', 'js', 'bower', 'imagemin'],
     callback
   );
 });
@@ -127,4 +141,3 @@ gulp.task('start', function(callback) {
     callback
   )
 });
-
