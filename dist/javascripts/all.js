@@ -1,0 +1,1 @@
+$(function(){!function(e,t){e.___gcfg={lang:"ja"};var n,c=t.getElementsByTagName("script")[0],o=function(e,o){t.getElementById(o)||(n=t.createElement("script"),n.src=e,o&&(n.id=o),c.parentNode.insertBefore(n,c))};o("//platform.twitter.com/widgets.js","twitter-wjs"),o("//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0","facebook-jssdk")}(this,document)});
