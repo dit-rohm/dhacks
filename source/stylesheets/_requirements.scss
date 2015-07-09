@@ -26,6 +26,10 @@
       padding-left: 20px;
       color: $base-text-color;
       vertical-align: middle;
+      .note {
+        font-size: .9rem;
+        color: $sub-text-color;
+      }
     }
     tr {
       background: white;
