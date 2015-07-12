@@ -5,6 +5,7 @@ var path        = require('path');
 var gulp        = require('gulp');
 var plumber     = require('gulp-plumber');
 var compass     = require('gulp-compass');
+var sitemap     = require('gulp-sitemap');
 var minifyHTML  = require('gulp-minify-html');
 var minifyCSS   = require('gulp-minify-css');
 var uglify      = require('gulp-uglify');
@@ -44,6 +45,14 @@ var server = {
   host: 'localhost',
   port: '8000'
 };
+
+gulp.task('sitemap', function () {
+  return gulp.src(path.join(source.html, '**/*.html'))
+    .pipe(sitemap({
+      siteUrl: 'https://dhacks.party/'
+    }))
+    .pipe(gulp.dest(build.html));
+});
 
 gulp.task('html', function() {
   return gulp.src(path.join(source.html, '**/*.html'))
@@ -125,7 +134,7 @@ gulp.task('watch', function() {
 gulp.task('build', function(callback) {
   runSequence(
     'clean',
-    ['html-build', 'compass', 'js', 'bower', 'imagemin'],
+    ['sitemap', 'html-build', 'compass', 'js', 'bower', 'imagemin'],
     callback
   );
 });
