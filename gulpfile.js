@@ -87,7 +87,8 @@ gulp.task('js', function() {
 gulp.task('bower', function() {
   var bowerFiles = [
     'bower_components/jquery/dist/jquery.min.js',
-    'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js'
+    'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js',
+    "bower_components/slick.js/slick/slick.min.js"
   ];
   return gulp.src(bowerFiles)
     .pipe(uglify({preserveComments: 'some'}))

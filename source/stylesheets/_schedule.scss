@@ -7,5 +7,12 @@
     img {
       max-width: 100%;
     }
+    .row {
+      .schedule-slider {
+        .day-schedule {
+          float: left;
+        }
+      }
+    }
   }
 }
