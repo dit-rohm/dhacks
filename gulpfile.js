@@ -111,6 +111,12 @@ gulp.task('imagemin', function() {
     .pipe(gulp.dest(build.image));
 });
 
+gulp.task('misc', function() {
+  var glob = '**/*.+(txt)';
+  return gulp.src(path.join(source.root, glob))
+    .pipe(gulp.dest(build.root));
+});
+
 gulp.task('clean', function(cb) {
   del([build.root], cb);
 });
@@ -134,7 +140,7 @@ gulp.task('watch', function() {
 gulp.task('build', function(callback) {
   runSequence(
     'clean',
-    ['sitemap', 'html-build', 'compass', 'js', 'bower', 'imagemin'],
+    ['sitemap', 'html-build', 'compass', 'js', 'bower', 'imagemin', 'misc'],
     callback
   );
 });
