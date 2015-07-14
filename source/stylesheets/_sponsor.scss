@@ -3,10 +3,10 @@
   padding: 0;
   padding-bottom: $section-margin * 2;
   .container {
-    max-width: 450px;
+    max-width: 750px;
     text-align: center;
     h2 {
-      margin-bottom: $base-margin;
+      margin-bottom: $base-margin * 1.5;
     }
     .row {
       a {
@@ -18,11 +18,19 @@
       }
       .supporterz {
         padding-top: 25px;
+        img {
+          width: 180px;
+        }
       }
       .cyberagent {
         margin-right: 0;
         img {
-          width: 120px;
+          width: 130px;
+        }
+      }
+      .cybozu {
+        img {
+          width: 130px;
         }
       }
     }
@@ -30,9 +38,19 @@
 }
 
 @media screen and (max-width: 767px) {
-  .supporterz {
-    padding-top: 0 !important;
-    padding-bottom: $base-margin;
+  #sponsor {
+    .container {
+      h2 {
+        margin-bottom: $base-margin;
+      }
+      .supporterz {
+        padding-top: 0 !important;
+        padding-bottom: $base-margin + 10;
+      }
+      .cyberagent {
+        padding-bottom: $base-margin;
+      }
+    }
   }
 }
 
