@@ -1,0 +1,27 @@
+#faq {
+  background-image: url("../images/background.png");
+  color: $white-text-color;
+  h2 {
+    color: inherit;
+  }
+  .container {
+    max-width: 800px;
+    h3 {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #faq {
+    .container {
+      text-align: center;
+    }
+  }
+}
+
+

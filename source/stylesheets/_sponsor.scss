@@ -1,6 +1,7 @@
 @charset "UTF-8";
 #sponsor {
   padding: 0;
+  padding-top: $section-margin;
   padding-bottom: $section-margin * 2;
   .container {
     max-width: 450px;
