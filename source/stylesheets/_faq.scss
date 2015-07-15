@@ -1,6 +1,6 @@
 #faq {
   background-image: url("../images/background.png");
-  color: $white-text-color;
+  color: #f5f7ff;
   h2 {
     color: inherit;
   }
@@ -11,7 +11,8 @@
       font-weight: bold;
     }
     p {
-      font-size: 1.1rem;
+      font-size: 1rem;
+      color: #dddff4;
     }
   }
 }
