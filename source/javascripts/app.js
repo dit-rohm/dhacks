@@ -8,3 +8,20 @@ $(function() {
     a("//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0","facebook-jssdk");
   })(this, document);
 });
+
+//タイムテーブルの表示判別コード
+$(function() {
+  if ($(window).width() >= 768) {
+    $("#schedule .row").append('<a href="./images/schedule.png"><img src="./images/schedule.png" alt="スケジュール"></a>');
+  } else {
+    $("#schedule .row").append('<div class="schedule-slider"></div>');
+    $(".schedule-slider").append('<div class="day-schedule">foo</div>');
+    $(".schedule-slider").append('<div class="day-schedule">foo</div>');
+    $(".schedule-slider").append('<div class="day-schedule">foo</div>');
+    $(".schedule-slider").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false
+    });
+  }
+});
