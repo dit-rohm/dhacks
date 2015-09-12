@@ -54,21 +54,17 @@
   .btn-more {
     display: block;
     margin: 0 auto;
-    padding: 10px 30px;
-    max-width: 250px;
+    padding: 10px 50px;
+    max-width: 290px;
     background: $accent-color;
     border-color: $accent-color;
     border-radius: 0;
     color: $white-text-color;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     text-transform: uppercase;
     @include box-sizing(border-box);
     @include transition-duration(0.3s);
-    &:hover {
-      text-decoration: none;
-      opacity: .8;
-    }
   }
   .round {
     border-radius: 3px;

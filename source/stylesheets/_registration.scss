@@ -5,23 +5,19 @@
   .registration-btn {
     display: block;
     margin: 0 auto;
-    max-width: 230px;
-    height: 45px;
+    padding: 13px 40px;
+    max-width: 270px;
     border: none;
+    font-size: 1.1rem;
     border-radius: 3px;
     background: $accent-color;
     color: $white-text-color;
     font-weight: bold;
     outline: none;
-    line-height: 45px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     @include transition-duration(0.2s);
     @include transition-timing-function(ease-in-out);
-    &:hover {
-      text-decoration: none;
-      opacity: .8;
-    }
   }
 }
