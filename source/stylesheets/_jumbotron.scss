@@ -63,6 +63,7 @@
     font-size: 1.1rem;
     font-weight: bold;
     text-transform: uppercase;
+    opacity: 1;
     @include box-sizing(border-box);
     @include transition-duration(0.3s);
   }

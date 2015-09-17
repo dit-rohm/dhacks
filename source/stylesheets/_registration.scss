@@ -17,6 +17,7 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    opacity: 1;
     @include transition-duration(0.2s);
     @include transition-timing-function(ease-in-out);
   }
