@@ -1,4 +1,4 @@
-# Summer Hackathon
+# DHacks
 
 ## Requirements
 
@@ -31,3 +31,4 @@ $ npm run build
 ```
 $ npm run deploy
 ```
+
